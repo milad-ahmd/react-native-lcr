@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`setFieldDataRequest requests the field data 1`] = `
+Object {
+  "address": 1,
+  "body": Array [
+    36,
+    undefined,
+  ],
+  "requestName": "issue command: undefined",
+  "response": StreamResponse {
+    "data": Object {
+      "code": DecimalType {
+        "length": 1,
+      },
+      "devStatus": DecimalType {
+        "length": 1,
+      },
+    },
+  },
+}
+`;

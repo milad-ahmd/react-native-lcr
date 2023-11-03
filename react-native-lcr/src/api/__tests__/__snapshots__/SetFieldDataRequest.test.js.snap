@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`setFieldDataRequest sets the field data 1`] = `
+Object {
+  "address": 1,
+  "body": Array [
+    33,
+    3,
+    10,
+  ],
+  "requestName": "set field: currentNetQuantity: 3",
+  "response": StreamResponse {
+    "data": Object {
+      "code": DecimalType {
+        "length": 1,
+      },
+    },
+  },
+}
+`;

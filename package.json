@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@nx/react-native": "^16.8.1"
+  }
+}
