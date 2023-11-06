@@ -5,7 +5,6 @@ import {NativeModules} from 'react-native';
 import {actions as streamActions} from '../redux/modules/stream';
 import Socket from './SocketManager';
 import StreamStatus from './StreamStatus';
-import {pretty} from 'js-object-pretty-print';
 const MAX_REQUEST_RETRIES = 3;
 
 class StreamQueue {
@@ -155,7 +154,7 @@ class StreamQueue {
     const {resolve, response} = this.request;
     const parsed = response.read(data);
 
-    this.log('Response received: ' + pretty(parsed));
+    this.log('Response received: ' + JSON.stringify(parsed));
     resolve(parsed);
     this.request = null;
     this.processNextQueued();
