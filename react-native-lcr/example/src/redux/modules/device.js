@@ -1,7 +1,14 @@
 import {createActions, handleActions} from 'redux-actions';
 import {select, call, takeEvery, put, all} from 'redux-saga/effects';
-import { issueCommandRequest, getFieldDataRequest,getDeliveryStatusRequest,setFieldDataRequest,DeliveryCode,
-  Device,Product,streamQueue} from 'react-native-lcr';
+import { issueCommandRequest,
+  getFieldDataRequest,
+  getDeliveryStatusRequest,
+  setFieldDataRequest,
+  DeliveryCode,
+  Device,
+  Product,
+  streamQueue
+} from 'react-native-lcr';
 import {actions as containerActions} from '../../redux/modules/container';
 
 const {queue} = streamQueue;

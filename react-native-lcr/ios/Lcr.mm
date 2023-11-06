@@ -24,7 +24,7 @@
 
 @implementation Lcr
 
-RCT_EXPORT_MODULE()
+RCT_EXPORT_MODULE(Lcr)
 
 RCT_EXPORT_METHOD(buildMessageFunc:(NSArray *)message
                   toNode:(int)node
