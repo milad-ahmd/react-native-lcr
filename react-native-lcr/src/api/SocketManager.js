@@ -1,4 +1,4 @@
-const tcp = require('net');
+const tcp = require('react-native-tcp-socket');
 const Buffer = require('buffer').Buffer;
 
 const SOCKET_TIMEOUT = 2000;
