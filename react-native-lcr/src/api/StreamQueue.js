@@ -36,6 +36,7 @@ class StreamQueue {
   }
 
   connect(host, port ,emitter) {
+    console.log('there is here')
     this.emitter = emitter;
     this.log('Sending environment');
     this.socket = new Socket({
@@ -44,6 +45,7 @@ class StreamQueue {
       onLog: this.log,
       onStatusChange: this.setStreamStatus,
     });
+    console.log(this.socket.connected)
     this.socket.connect({
       port,
       host,
