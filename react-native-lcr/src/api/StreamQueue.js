@@ -2,7 +2,8 @@ import {StreamResponse, DecimalType} from '../api/StreamResponse';
 import ReturnCode from './ReturnCode';
 import RequestId from './RequestId';
 import {NativeModules} from 'react-native';
-import {actions as streamActions} from '../redux/modules/stream';
+let streamActions;
+// import {actions as streamActions} from '../redux/modules/stream';
 import Socket from './SocketManager';
 import StreamStatus from './StreamStatus';
 const MAX_REQUEST_RETRIES = 3;
@@ -35,7 +36,8 @@ class StreamQueue {
     });
   }
 
-  connect(host, port ,emitter) {
+  connect(host, port ,emitter,actions) {
+    streamActions=actions;
     console.log('there is here')
     this.emitter = emitter;
     this.log('Sending environment');
@@ -54,7 +56,7 @@ class StreamQueue {
 
 
   log(msg) {
-    this.emitter(streamActions.log(msg));
+    // this.emitter(streamActions.log(msg));
   }
   log(msg,streamActions) {
     this.emitter(streamActions.log(msg));
