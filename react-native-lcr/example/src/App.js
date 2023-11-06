@@ -1,15 +1,15 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-lcr';
+import { Field, AsciiType } from 'react-native-lcr';
 import {PrintRequest} from 'react-native-lcr'
 
 export default function App() {
-  const [result, setResult] = React.useState();
+  const [result, setResult] = React.useState(0);
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
     let field = new Field(6, new AsciiType())
+    console.log(field);
     // field.value = `\n\n\n\n\n.`
     // let deviceAddress = 1
     // PrintRequest(250,100);

@@ -11,11 +11,11 @@ npm install react-native-lcr
 ## Usage
 
 ```js
-import { multiply } from 'react-native-lcr';
+import { Field, AsciiType } from 'react-native-lcr';
 
 // ...
 
-const result = await multiply(3, 7);
+    const field = new Field(6, new AsciiType())
 ```
 
 ## Contributing

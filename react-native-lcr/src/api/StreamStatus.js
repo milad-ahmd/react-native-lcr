@@ -1,7 +1,7 @@
 const StreamStatus = {
-  Disconnected: "disconnected",
-  Connected: "connected",
-  Connecting: "connecting",
-}
+  Disconnected: 'disconnected',
+  Connected: 'connected',
+  Connecting: 'connecting',
+};
 
-export default StreamStatus
+export default StreamStatus;

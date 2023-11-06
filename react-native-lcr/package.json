@@ -1,6 +1,6 @@
 {
   "name": "react-native-lcr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React-Native library for liquid controls",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -42,13 +42,16 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/masoud-mahmoudi/react-native-lcr.git",
-  "author": "Masoud Mahmoudi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milad-ahmd/react-native-lcr.git"
+  },
+  "author": "Milad Ahmadi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/masoud-mahmoudi/react-native-lcr.git/issues"
+    "url": "https://github.com/milad-ahmd/react-native-lcr.git/issues"
   },
-  "homepage": "https://github.com/masoud-mahmoudi/react-native-lcr.git#readme",
+  "homepage": "https://github.com/milad-ahmd/react-native-lcr.git#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -150,7 +153,12 @@
     "targets": [
       "commonjs",
       "module"
-      
     ]
+  },
+  "dependencies": {
+    "js-object-pretty-print": "^0.3.0"
+  },
+  "directories": {
+    "example": "example"
   }
 }

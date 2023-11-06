@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`action creators connectToStream matches snapshot 1`] = `
+Object {
+  "type": "STREAM/CONNECT_TO_STREAM",
+}
+`;
+
+exports[`action creators setStreamStatus matches snapshot 1`] = `
+Object {
+  "payload": Object {
+    "status": "connected",
+  },
+  "type": "STREAM/SET_STREAM_STATUS",
+}
+`;
+
+exports[`stream module reducer #connectToStream matches snapshot 1`] = `undefined`;
+
+exports[`stream module reducer #setStreamStatus matches snapshot 1`] = `
+Array [
+  DiffEdit {
+    "kind": "E",
+    "lhs": "disconnected",
+    "path": Array [
+      "status",
+    ],
+    "rhs": "connected",
+  },
+]
+`;

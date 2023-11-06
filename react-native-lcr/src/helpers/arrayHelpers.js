@@ -5,17 +5,17 @@
  */
 export function arraysEqual(array1, array2) {
   if (!array1 || !array2) {
-    return false
+    return false;
   }
   if (array1.length != array2.length) {
-    return false
+    return false;
   }
 
-  let compare
+  let compare;
   try {
-    compare = array1.map((element, index) => element == array2[index])
+    compare = array1.map((element, index) => element == array2[index]);
   } catch (error) {
-    return false
+    return false;
   }
-  return !compare.includes(false)
+  return !compare.includes(false);
 }

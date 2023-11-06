@@ -1,0 +1,760 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`action creators clearDeliveryPresets matches snapshot 1`] = `
+Object {
+  "type": "DEVICE/CLEAR_DELIVERY_PRESETS",
+}
+`;
+
+exports[`action creators getAvailableDevices matches snapshot 1`] = `
+Object {
+  "payload": Object {
+    "container": undefined,
+  },
+  "type": "DEVICE/GET_AVAILABLE_DEVICES",
+}
+`;
+
+exports[`action creators getAvailableProducts matches snapshot 1`] = `
+Object {
+  "payload": Object {
+    "container": "container name",
+  },
+  "type": "DEVICE/GET_AVAILABLE_PRODUCTS",
+}
+`;
+
+exports[`action creators getDeliveryStatus matches snapshot 1`] = `
+Object {
+  "payload": Object {
+    "container": "container name",
+  },
+  "type": "DEVICE/GET_DELIVERY_STATUS",
+}
+`;
+
+exports[`action creators getFieldData matches snapshot 1`] = `
+Object {
+  "payload": Object {
+    "container": "container name",
+    "fields": Array [
+      Field {
+        "address": 1,
+        "dataType": DecimalType {
+          "length": 4,
+        },
+        "name": undefined,
+        "value": 0,
+      },
+      Field {
+        "address": 2,
+        "dataType": DecimalType {
+          "length": 4,
+        },
+        "name": "currentGrossQuantity",
+        "value": 0,
+      },
+    ],
+  },
+  "type": "DEVICE/GET_FIELD_DATA",
+}
+`;
+
+exports[`action creators issueCommand matches snapshot 1`] = `
+Object {
+  "payload": Object {
+    "command": 0,
+    "container": "container name",
+  },
+  "type": "DEVICE/ISSUE_COMMAND",
+}
+`;
+
+exports[`action creators refreshDeliveryData matches snapshot 1`] = `
+Object {
+  "type": "DEVICE/REFRESH_DELIVERY_DATA",
+}
+`;
+
+exports[`action creators setActivePosProduct matches snapshot 1`] = `
+Object {
+  "payload": Object {
+    "container": "container name",
+    "product": Product {
+      "name": "product name",
+      "number": 2,
+    },
+  },
+  "type": "DEVICE/SET_ACTIVE_POS_PRODUCT",
+}
+`;
+
+exports[`action creators setActiveProduct matches snapshot 1`] = `
+Object {
+  "payload": Object {
+    "container": "container name",
+    "product": 1,
+  },
+  "type": "DEVICE/SET_ACTIVE_PRODUCT",
+}
+`;
+
+exports[`action creators setAvailableDevices matches snapshot 1`] = `
+Object {
+  "payload": Object {
+    "devices": Array [
+      Device {
+        "activePOSProductCalibration": Field {
+          "address": 201,
+          "dataType": DecimalType {
+            "length": 1,
+          },
+          "name": "activePOSProductCalibration",
+          "value": null,
+        },
+        "activePOSProductName": Field {
+          "address": 198,
+          "dataType": AsciiType {
+            "length": null,
+          },
+          "name": "activePOSProductName",
+          "value": null,
+        },
+        "activePOSProductNumber": Field {
+          "address": 197,
+          "dataType": DecimalType {
+            "length": 2,
+          },
+          "name": "activePOSProductNumber",
+          "value": null,
+        },
+        "activeProductDescriptor": Field {
+          "address": 11,
+          "dataType": AsciiType {
+            "length": null,
+          },
+          "name": "activeProductDescriptor",
+          "value": null,
+        },
+        "activeProductNumber": Field {
+          "address": 0,
+          "dataType": DecimalType {
+            "length": 1,
+          },
+          "name": "activeProductNumber",
+          "value": null,
+        },
+        "address": 1,
+        "calculatedTotalDue": Field {
+          "address": 230,
+          "dataType": FloatType {
+            "length": 4,
+          },
+          "name": "calculatedTotalDue",
+          "value": 0,
+        },
+        "compensationType": Field {
+          "address": 57,
+          "dataType": DecimalType {
+            "length": 1,
+          },
+          "name": "compensationType",
+          "value": 0,
+        },
+        "currentFlowRate": Field {
+          "address": 4,
+          "dataType": DecimalType {
+            "length": 4,
+          },
+          "name": "currentFlowRate",
+          "value": 0,
+        },
+        "currentGrossQuantity": Field {
+          "address": 2,
+          "dataType": DecimalType {
+            "length": 4,
+          },
+          "name": "currentGrossQuantity",
+          "value": 0,
+        },
+        "currentNetQuantity": Field {
+          "address": 3,
+          "dataType": DecimalType {
+            "length": 4,
+          },
+          "name": "currentNetQuantity",
+          "value": 0,
+        },
+        "deliveryCode": DeliveryCode {
+          "active": false,
+          "deliveringGrossPreset": false,
+          "deliveringNetPreset": false,
+          "finished": undefined,
+          "flowing": false,
+          "shiftTicketPending": false,
+          "ticketPending": false,
+        },
+        "grossPreset": Field {
+          "address": 5,
+          "dataType": DecimalType {
+            "length": 4,
+          },
+          "name": "grossPreset",
+          "value": 0,
+        },
+        "netPreset": Field {
+          "address": 6,
+          "dataType": DecimalType {
+            "length": 4,
+          },
+          "name": "netPreset",
+          "value": 0,
+        },
+        "pricePreset": Field {
+          "address": 192,
+          "dataType": FloatType {
+            "length": 4,
+          },
+          "name": "pricePreset",
+          "value": 0,
+        },
+        "products": Object {},
+        "pulsesPerUnit": Field {
+          "address": 47,
+          "dataType": DecimalType {
+            "length": null,
+          },
+          "name": "pulsesPerUnit",
+          "value": null,
+        },
+        "purchasedFeatures": Field {
+          "address": 125,
+          "dataType": DecimalType {
+            "length": null,
+          },
+          "name": "purchasedFeatures",
+          "value": null,
+        },
+        "volumeDecimalPlaces": Field {
+          "address": 39,
+          "dataType": DecimalType {
+            "length": 1,
+          },
+          "name": "volumeDecimalPlaces",
+          "value": 1,
+        },
+      },
+      Device {
+        "activePOSProductCalibration": Field {
+          "address": 201,
+          "dataType": DecimalType {
+            "length": 1,
+          },
+          "name": "activePOSProductCalibration",
+          "value": null,
+        },
+        "activePOSProductName": Field {
+          "address": 198,
+          "dataType": AsciiType {
+            "length": null,
+          },
+          "name": "activePOSProductName",
+          "value": null,
+        },
+        "activePOSProductNumber": Field {
+          "address": 197,
+          "dataType": DecimalType {
+            "length": 2,
+          },
+          "name": "activePOSProductNumber",
+          "value": null,
+        },
+        "activeProductDescriptor": Field {
+          "address": 11,
+          "dataType": AsciiType {
+            "length": null,
+          },
+          "name": "activeProductDescriptor",
+          "value": null,
+        },
+        "activeProductNumber": Field {
+          "address": 0,
+          "dataType": DecimalType {
+            "length": 1,
+          },
+          "name": "activeProductNumber",
+          "value": null,
+        },
+        "address": 1,
+        "calculatedTotalDue": Field {
+          "address": 230,
+          "dataType": FloatType {
+            "length": 4,
+          },
+          "name": "calculatedTotalDue",
+          "value": 0,
+        },
+        "compensationType": Field {
+          "address": 57,
+          "dataType": DecimalType {
+            "length": 1,
+          },
+          "name": "compensationType",
+          "value": 0,
+        },
+        "currentFlowRate": Field {
+          "address": 4,
+          "dataType": DecimalType {
+            "length": 4,
+          },
+          "name": "currentFlowRate",
+          "value": 0,
+        },
+        "currentGrossQuantity": Field {
+          "address": 2,
+          "dataType": DecimalType {
+            "length": 4,
+          },
+          "name": "currentGrossQuantity",
+          "value": 0,
+        },
+        "currentNetQuantity": Field {
+          "address": 3,
+          "dataType": DecimalType {
+            "length": 4,
+          },
+          "name": "currentNetQuantity",
+          "value": 0,
+        },
+        "deliveryCode": DeliveryCode {
+          "active": false,
+          "deliveringGrossPreset": false,
+          "deliveringNetPreset": false,
+          "finished": undefined,
+          "flowing": false,
+          "shiftTicketPending": false,
+          "ticketPending": false,
+        },
+        "grossPreset": Field {
+          "address": 5,
+          "dataType": DecimalType {
+            "length": 4,
+          },
+          "name": "grossPreset",
+          "value": 0,
+        },
+        "netPreset": Field {
+          "address": 6,
+          "dataType": DecimalType {
+            "length": 4,
+          },
+          "name": "netPreset",
+          "value": 0,
+        },
+        "pricePreset": Field {
+          "address": 192,
+          "dataType": FloatType {
+            "length": 4,
+          },
+          "name": "pricePreset",
+          "value": 0,
+        },
+        "products": Object {},
+        "pulsesPerUnit": Field {
+          "address": 47,
+          "dataType": DecimalType {
+            "length": null,
+          },
+          "name": "pulsesPerUnit",
+          "value": null,
+        },
+        "purchasedFeatures": Field {
+          "address": 125,
+          "dataType": DecimalType {
+            "length": null,
+          },
+          "name": "purchasedFeatures",
+          "value": null,
+        },
+        "volumeDecimalPlaces": Field {
+          "address": 39,
+          "dataType": DecimalType {
+            "length": 1,
+          },
+          "name": "volumeDecimalPlaces",
+          "value": 1,
+        },
+      },
+    ],
+  },
+  "type": "DEVICE/SET_AVAILABLE_DEVICES",
+}
+`;
+
+exports[`action creators setDeliveryPreset matches snapshot 1`] = `
+Object {
+  "payload": Object {
+    "container": "container name",
+    "isPricePreset": true,
+    "value": 30,
+  },
+  "type": "DEVICE/SET_DELIVERY_PRESET",
+}
+`;
+
+exports[`action creators setFieldData matches snapshot 1`] = `
+Object {
+  "payload": Object {
+    "container": "container name",
+    "data": 20,
+    "field": Field {
+      "address": 1,
+      "dataType": DecimalType {
+        "length": 4,
+      },
+      "name": undefined,
+      "value": 0,
+    },
+    "localValue": 10,
+  },
+  "type": "DEVICE/SET_FIELD_DATA",
+}
+`;
+
+exports[`action creators setSelectedDevice matches snapshot 1`] = `
+Object {
+  "payload": Object {
+    "container": "container name",
+    "device": Device {
+      "activePOSProductCalibration": Field {
+        "address": 201,
+        "dataType": DecimalType {
+          "length": 1,
+        },
+        "name": "activePOSProductCalibration",
+        "value": null,
+      },
+      "activePOSProductName": Field {
+        "address": 198,
+        "dataType": AsciiType {
+          "length": null,
+        },
+        "name": "activePOSProductName",
+        "value": null,
+      },
+      "activePOSProductNumber": Field {
+        "address": 197,
+        "dataType": DecimalType {
+          "length": 2,
+        },
+        "name": "activePOSProductNumber",
+        "value": null,
+      },
+      "activeProductDescriptor": Field {
+        "address": 11,
+        "dataType": AsciiType {
+          "length": null,
+        },
+        "name": "activeProductDescriptor",
+        "value": null,
+      },
+      "activeProductNumber": Field {
+        "address": 0,
+        "dataType": DecimalType {
+          "length": 1,
+        },
+        "name": "activeProductNumber",
+        "value": null,
+      },
+      "address": 1,
+      "calculatedTotalDue": Field {
+        "address": 230,
+        "dataType": FloatType {
+          "length": 4,
+        },
+        "name": "calculatedTotalDue",
+        "value": 0,
+      },
+      "compensationType": Field {
+        "address": 57,
+        "dataType": DecimalType {
+          "length": 1,
+        },
+        "name": "compensationType",
+        "value": 0,
+      },
+      "currentFlowRate": Field {
+        "address": 4,
+        "dataType": DecimalType {
+          "length": 4,
+        },
+        "name": "currentFlowRate",
+        "value": 0,
+      },
+      "currentGrossQuantity": Field {
+        "address": 2,
+        "dataType": DecimalType {
+          "length": 4,
+        },
+        "name": "currentGrossQuantity",
+        "value": 0,
+      },
+      "currentNetQuantity": Field {
+        "address": 3,
+        "dataType": DecimalType {
+          "length": 4,
+        },
+        "name": "currentNetQuantity",
+        "value": 0,
+      },
+      "deliveryCode": DeliveryCode {
+        "active": false,
+        "deliveringGrossPreset": false,
+        "deliveringNetPreset": false,
+        "finished": undefined,
+        "flowing": false,
+        "shiftTicketPending": false,
+        "ticketPending": false,
+      },
+      "grossPreset": Field {
+        "address": 5,
+        "dataType": DecimalType {
+          "length": 4,
+        },
+        "name": "grossPreset",
+        "value": 0,
+      },
+      "netPreset": Field {
+        "address": 6,
+        "dataType": DecimalType {
+          "length": 4,
+        },
+        "name": "netPreset",
+        "value": 0,
+      },
+      "pricePreset": Field {
+        "address": 192,
+        "dataType": FloatType {
+          "length": 4,
+        },
+        "name": "pricePreset",
+        "value": 0,
+      },
+      "products": Object {},
+      "pulsesPerUnit": Field {
+        "address": 47,
+        "dataType": DecimalType {
+          "length": null,
+        },
+        "name": "pulsesPerUnit",
+        "value": null,
+      },
+      "purchasedFeatures": Field {
+        "address": 125,
+        "dataType": DecimalType {
+          "length": null,
+        },
+        "name": "purchasedFeatures",
+        "value": null,
+      },
+      "volumeDecimalPlaces": Field {
+        "address": 39,
+        "dataType": DecimalType {
+          "length": 1,
+        },
+        "name": "volumeDecimalPlaces",
+        "value": 1,
+      },
+    },
+  },
+  "type": "DEVICE/SET_SELECTED_DEVICE",
+}
+`;
+
+exports[`action creators updateDevice matches snapshot 1`] = `
+Object {
+  "payload": Object {
+    "device": Device {
+      "activePOSProductCalibration": Field {
+        "address": 201,
+        "dataType": DecimalType {
+          "length": 1,
+        },
+        "name": "activePOSProductCalibration",
+        "value": null,
+      },
+      "activePOSProductName": Field {
+        "address": 198,
+        "dataType": AsciiType {
+          "length": null,
+        },
+        "name": "activePOSProductName",
+        "value": null,
+      },
+      "activePOSProductNumber": Field {
+        "address": 197,
+        "dataType": DecimalType {
+          "length": 2,
+        },
+        "name": "activePOSProductNumber",
+        "value": null,
+      },
+      "activeProductDescriptor": Field {
+        "address": 11,
+        "dataType": AsciiType {
+          "length": null,
+        },
+        "name": "activeProductDescriptor",
+        "value": null,
+      },
+      "activeProductNumber": Field {
+        "address": 0,
+        "dataType": DecimalType {
+          "length": 1,
+        },
+        "name": "activeProductNumber",
+        "value": null,
+      },
+      "address": 1,
+      "calculatedTotalDue": Field {
+        "address": 230,
+        "dataType": FloatType {
+          "length": 4,
+        },
+        "name": "calculatedTotalDue",
+        "value": 0,
+      },
+      "compensationType": Field {
+        "address": 57,
+        "dataType": DecimalType {
+          "length": 1,
+        },
+        "name": "compensationType",
+        "value": 0,
+      },
+      "currentFlowRate": Field {
+        "address": 4,
+        "dataType": DecimalType {
+          "length": 4,
+        },
+        "name": "currentFlowRate",
+        "value": 0,
+      },
+      "currentGrossQuantity": Field {
+        "address": 2,
+        "dataType": DecimalType {
+          "length": 4,
+        },
+        "name": "currentGrossQuantity",
+        "value": 0,
+      },
+      "currentNetQuantity": Field {
+        "address": 3,
+        "dataType": DecimalType {
+          "length": 4,
+        },
+        "name": "currentNetQuantity",
+        "value": 0,
+      },
+      "deliveryCode": DeliveryCode {
+        "active": false,
+        "deliveringGrossPreset": false,
+        "deliveringNetPreset": false,
+        "finished": undefined,
+        "flowing": false,
+        "shiftTicketPending": false,
+        "ticketPending": false,
+      },
+      "grossPreset": Field {
+        "address": 5,
+        "dataType": DecimalType {
+          "length": 4,
+        },
+        "name": "grossPreset",
+        "value": 0,
+      },
+      "netPreset": Field {
+        "address": 6,
+        "dataType": DecimalType {
+          "length": 4,
+        },
+        "name": "netPreset",
+        "value": 0,
+      },
+      "pricePreset": Field {
+        "address": 192,
+        "dataType": FloatType {
+          "length": 4,
+        },
+        "name": "pricePreset",
+        "value": 0,
+      },
+      "products": Object {},
+      "pulsesPerUnit": Field {
+        "address": 47,
+        "dataType": DecimalType {
+          "length": null,
+        },
+        "name": "pulsesPerUnit",
+        "value": null,
+      },
+      "purchasedFeatures": Field {
+        "address": 125,
+        "dataType": DecimalType {
+          "length": null,
+        },
+        "name": "purchasedFeatures",
+        "value": null,
+      },
+      "volumeDecimalPlaces": Field {
+        "address": 39,
+        "dataType": DecimalType {
+          "length": 1,
+        },
+        "name": "volumeDecimalPlaces",
+        "value": 1,
+      },
+    },
+  },
+  "type": "DEVICE/UPDATE_DEVICE",
+}
+`;
+
+exports[`device module reducer #clearDeliveryPresets matches snapshot 1`] = `undefined`;
+
+exports[`device module reducer #getAvailableDevices matches snapshot 1`] = `undefined`;
+
+exports[`device module reducer #getAvailableProducts matches snapshot 1`] = `undefined`;
+
+exports[`device module reducer #getDeliveryStatus matches snapshot 1`] = `undefined`;
+
+exports[`device module reducer #getFieldData matches snapshot 1`] = `undefined`;
+
+exports[`device module reducer #issueCommand matches snapshot 1`] = `undefined`;
+
+exports[`device module reducer #refreshDeliveryData matches snapshot 1`] = `undefined`;
+
+exports[`device module reducer #setActivePosProduct matches snapshot 1`] = `undefined`;
+
+exports[`device module reducer #setActiveProduct matches snapshot 1`] = `undefined`;
+
+exports[`device module reducer #setAvailableDevices matches snapshot 1`] = `undefined`;
+
+exports[`device module reducer #setDeliveryPreset matches snapshot 1`] = `undefined`;
+
+exports[`device module reducer #setFieldData matches snapshot 1`] = `undefined`;
+
+exports[`device module reducer #setSelectedDevice matches snapshot 1`] = `
+Array [
+  DiffEdit {
+    "kind": "E",
+    "lhs": null,
+    "path": Array [
+      "selectedDeviceAddress",
+    ],
+    "rhs": 1,
+  },
+]
+`;
+
+exports[`device module reducer #updateDevice matches snapshot 1`] = `undefined`;

@@ -1,6 +1,6 @@
 /**
-*  The request message id used to call functions on the LCR
-*/
+ *  The request message id used to call functions on the LCR
+ */
 
 const RequestId = {
   GetProductId: 0,
@@ -10,7 +10,7 @@ const RequestId = {
   IssueCommand: 36,
   AbortRequest: 126,
   CheckRequest: 125,
-  PrintRequest: 34
-}
+  PrintRequest: 34,
+};
 
-export default RequestId
+export default RequestId;
