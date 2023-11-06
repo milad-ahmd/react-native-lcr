@@ -20,6 +20,7 @@
 
 #import "Lcr.h"
 #import <React/RCTLog.h>
+#import "LCP.hpp"
 
 
 @implementation Lcr
