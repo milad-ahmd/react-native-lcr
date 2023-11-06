@@ -2,7 +2,6 @@ import {StreamResponse, DecimalType} from '../api/StreamResponse';
 import ReturnCode from './ReturnCode';
 import RequestId from './RequestId';
 import {NativeModules} from 'react-native';
-let streamActions;
 // import {actions as streamActions} from '../redux/modules/stream';
 import Socket from './SocketManager';
 import StreamStatus from './StreamStatus';
@@ -37,7 +36,7 @@ class StreamQueue {
   }
 
   connect(host, port ,emitter,actions) {
-    streamActions=actions;
+    this.streamActions=actions;
     console.log('there is here')
     this.emitter = emitter;
     this.log('Sending environment');
@@ -56,26 +55,16 @@ class StreamQueue {
 
 
   log(msg) {
-    // this.emitter(streamActions.log(msg));
-  }
-  log(msg,streamActions) {
-    this.emitter(streamActions.log(msg));
+    console.log(msg)
+    this.emitter(this.streamActions.log(msg));
   }
 
   setStreamStatus(status) {
     if (status != StreamStatus.Connected) {
       status = StreamStatus.Connecting;
     }
-    this.emitter(streamActions.setStreamStatus(status));
+    this.emitter(this.streamActions.setStreamStatus(status));
   }
-
-  setStreamStatus(status,streamActions) {
-    if (status != StreamStatus.Connected) {
-      status = StreamStatus.Connecting;
-    }
-    this.emitter(streamActions.setStreamStatus(status));
-  }
-
   queue(request) {
     this.reqCount++;
     const promise = new Promise((resolve, reject) => {
@@ -182,6 +171,7 @@ class StreamQueue {
   }
 
   sendToSocket(body, address) {
+    console.log(body,address)
     NativeModules.LCR.buildMessageFunc(body, address)
       .then(message => {
         this.socket.write(message);
