@@ -13,7 +13,6 @@ class StreamQueue {
     this.reqCount = 0;
     this.queue = this.queue.bind(this);
     this.processNextQueued = this.processNextQueued.bind(this);
-    this.connect = this.connect.bind(this);
     this.processResponse = this.processResponse.bind(this);
     this.setStreamStatus = this.setStreamStatus.bind(this);
     this.connect = this.connect.bind(this);

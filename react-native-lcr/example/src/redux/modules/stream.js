@@ -50,7 +50,7 @@ export function* setStreamStatusSaga(action) {
 export function* connectToStreamSaga() {
   yield put(actions.setStreamStatus(StreamStatus.Connecting));
   const channel = yield eventChannel(emitter => {
-    streamQueue.connect(emitter);
+    streamQueue.connect('10.10.100.254',8899,emitter);
     return () => {};
   });
   while (true) {
