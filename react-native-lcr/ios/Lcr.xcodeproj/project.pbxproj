@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11356F2B2AF946440009EEE8 /* MessageBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 11356F2A2AF946440009EEE8 /* MessageBuilder.m */; };
-		5E46D8CD2428F78900513E24 /* react-native-lcr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E46D8CB2428F78900513E24 /* react-native-lcr.cpp */; };
-		5E555C0D2413F4C50049A1A2 /* Lcr.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* Lcr.mm */; };
+		11356F2F2AFA4C3E0009EEE8 /* LCP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11356F2D2AFA4C3E0009EEE8 /* LCP.cpp */; };
+		11356F342AFA56340009EEE8 /* Lcr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 11356F332AFA56340009EEE8 /* Lcr.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,12 +24,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		11356F292AF9462A0009EEE8 /* MessageBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageBuilder.h; sourceTree = "<group>"; };
-		11356F2A2AF946440009EEE8 /* MessageBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageBuilder.m; sourceTree = "<group>"; };
+		11356F2C2AFA4C3E0009EEE8 /* LCP.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = LCP.hpp; path = ../cpp/LCP.hpp; sourceTree = "<group>"; };
+		11356F2D2AFA4C3E0009EEE8 /* LCP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LCP.cpp; path = ../cpp/LCP.cpp; sourceTree = "<group>"; };
+		11356F322AFA56340009EEE8 /* Lcr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lcr.h; sourceTree = "<group>"; };
+		11356F332AFA56340009EEE8 /* Lcr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Lcr.mm; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libLcr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLcr.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E46D8CB2428F78900513E24 /* react-native-lcr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "react-native-lcr.cpp"; path = "../cpp/react-native-lcr.cpp"; sourceTree = "<group>"; };
-		5E46D8CC2428F78900513E24 /* react-native-lcr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "react-native-lcr.h"; path = "../cpp/react-native-lcr.h"; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* Lcr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Lcr.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +53,10 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				11356F2A2AF946440009EEE8 /* MessageBuilder.m */,
-				11356F292AF9462A0009EEE8 /* MessageBuilder.h */,
-				5E46D8CB2428F78900513E24 /* react-native-lcr.cpp */,
-				5E46D8CC2428F78900513E24 /* react-native-lcr.h */,
-				B3E7B5891CC2AC0600A0062D /* Lcr.mm */,
+				11356F322AFA56340009EEE8 /* Lcr.h */,
+				11356F332AFA56340009EEE8 /* Lcr.mm */,
+				11356F2D2AFA4C3E0009EEE8 /* LCP.cpp */,
+				11356F2C2AFA4C3E0009EEE8 /* LCP.hpp */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,9 +118,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E46D8CD2428F78900513E24 /* react-native-lcr.cpp in Sources */,
-				5E555C0D2413F4C50049A1A2 /* Lcr.mm in Sources */,
-				11356F2B2AF946440009EEE8 /* MessageBuilder.m in Sources */,
+				11356F2F2AFA4C3E0009EEE8 /* LCP.cpp in Sources */,
+				11356F342AFA56340009EEE8 /* Lcr.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

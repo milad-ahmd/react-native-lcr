@@ -16,7 +16,7 @@
 
 
 #ifdef __cplusplus
-#import "react-native-lcr.hpp"
+#import "LCP.hpp"
 #endif
 
 #ifdef RCT_NEW_ARCH_ENABLED
