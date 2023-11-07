@@ -172,8 +172,8 @@ class StreamQueue {
 
   sendToSocket(body, address) {
     console.log(body,address)
-    console.log(NativeModules.LCR)
-    NativeModules.LCR.buildMessageFunc(body, address)
+    console.log(NativeModules.Lcr)
+    NativeModules.Lcr.buildMessageFunc(body, address)
       .then(message => {
         console.log(message);
         this.socket.write(message);
